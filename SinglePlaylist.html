@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title> Single PlayList Screen</title>
+	<!--Fontawesome and CSS file link-->
+	<link rel="stylesheet" type="text/css" href="StyleSinglePlaylist.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+	<!--Resposivesness-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+	<!--navigation bar-->
+	<nav>
+		<!--logo pic and name of station-->
+		<div class="logo-pic ">
+			<img src="images/navbar/logo.jpg">
+		</div>
+		<div class="nav-heading">
+			<h4 style="font-weight:200; ">NINJA</h4>
+			<h3>Studio</h3>
+		</div>
+
+		<div class="favs">
+			<h5>Favourites</h5>
+		</div>
+
+		<!--search bar containing search and microphone icon-->
+		<div class="search-bar">
+            <div class="search-icon">
+                <i class="fas fa-search"></i>
+            </div>
+            <input type="text" name="search" placeholder="Search">
+            <div class="microphone-icon">
+                <i class="fas fa-microphone"></i>
+            </div>
+        </div>
+
+        <!--notification bell-->
+        <div class="bell">
+        	<i class="fas fa-bell"></i>
+        </div>
+
+        <!--pofile pic-->
+        <div class="profile-pic">
+        	<img src="images/navbar/mypic.jpg">
+        </div>
+
+	</nav>
+
+
+	<!--main section consists of the songs of that playlist-->
+	<main>
+
+		<!--card of that band we clicked to enter singlePlaylist screen-->
+		<div class="main-card">
+			<div class="main-pic">
+				<img src="images/singers/art2.jpg">
+			</div>
+			<div class="text">
+				<h1 style="color:white;">ColdPlay</h1>
+				<p style="color:grey;">British Band</p>
+				<p style="color:grey;">ColdPlay is a british band that has enjoyed continous sucess since their inception in 1996 throught thier intelligence and soulful songs.The band members are Chris Martin(lead vocals), Jonny Bucklande, Guy Berryman and Will Champion</p>
+				<button id ="play">Play All</button>
+				<button id="follow">Follow</button>
+				<p style="color:grey;">247 Tracks | 128 Albums</p>
+			</div>
+		</div>
+
+		<!--list of songs of that playlist-->
+		<div class="list">
+			<div class="list-info">
+				<h5 style="color:grey;">01</h5>
+				<img src="images/english/eng1.jpg">
+				<div class="desc">
+					<h5 style="color:white;">Mirage</h5>
+					<h6 style="color:grey;margin-top:-1rem;">Else</h6>
+				</div>
+			</div>
+			
+			<div class="heart-cross">
+				<i class="far fa-heart list-hearts"></i>
+			    <i class="fas fa-cross list-cross"></i>
+			</div>
+			
+		</div>
+
+		<div class="list">
+			<div class="list-info">
+				<h5 style="color:grey;">02</h5>
+				<img src="images/english/eng2.jpg">
+				<div class="desc">
+					<h5 style="color:white;">Worry us</h5>
+					<h6 style="color:grey;margin-top:-1rem;">Rosie Love</h6>
+				</div>
+			</div>
+			
+			<div class="heart-cross">
+				<i class="far fa-heart list-hearts"></i>
+			    <i class="fas fa-cross list-cross"></i>
+			</div>
+		</div>
+
+		<div class="list">
+			<div class="list-info">
+				<h5 style="color:grey;">03</h5>
+				<img src="images/english/eng3.jpg">
+				<div class="desc">
+					<h5 style="color:white;">New Skin</h5>
+					<h6 style="color:grey;margin-top:-1rem;">Flame</h6>
+				</div>
+			</div>
+			
+			<div class="heart-cross">
+				<i class="far fa-heart list-hearts"></i>
+			    <i class="fas fa-cross list-cross"></i>
+			</div>
+		</div>
+
+		<div class="list">
+			<div class="list-info">
+				<h5 style="color:grey;">04</h5>
+				<img src="images/english/eng5.jpg">
+				<div class="desc">
+					<h5 style="color:white;">Mirage</h5>
+					<h6 style="color:grey;margin-top:-1rem;">Else</h6>
+				</div>
+			</div>
+		
+			<div class="heart-cross">
+				<i class="far fa-heart list-hearts"></i>
+			    <i class="fas fa-cross list-cross"></i>
+			</div>
+		</div>
+
+		<div class="list">
+			<div class="list-info">
+				<h5 style="color:grey;">05</h5>
+				<img src="images/english/eng4.png">
+				<div class="desc">
+					<h5 style="color:white;">Savage</h5>
+					<h6 style="color:grey;margin-top:-1rem;">Else</h6>
+				</div>
+			</div>
+			
+			<div class="heart-cross">
+				<i class="far fa-heart list-hearts"></i>
+			    <i class="fas fa-cross list-cross"></i>
+			</div>
+
+	</main>
+
+
+	<!--aside section consists of similar songs and recently played songs list-->
+	<aside>
+		<div class="heading">
+			<h1 style="color:white;">Similar Artists</h1>
+		</div>
+
+		<!--similar artist list-->
+		<div class="similar-list">
+			<div class="pic-info">
+				<img src="images/moods/party.jpg">
+				<div class="similar-desc">
+					<h5>Imagine Dragons</h5>
+					<h6 style="color:grey;margin-top:-10px;">Pop Bands</h6>
+				</div>
+			</div>	
+			<div class="three-dots">
+				<i class="fas fa-ellipsis-h"></i>
+			    <h6 style="color:grey; margin-left:-4px;">4.44</h6>
+			</div>		
+		</div>
+
+		<div class="similar-list">
+			<div class="pic-info">
+				<img src="images/moods/dj.jpeg">
+				<div class="similar-desc">
+					<h5>Imagine Dragons</h5>
+					<h6 style="color:grey;margin-top:-10px;">Pop Bands</h6>
+				</div>
+			</div>
+			<div class="three-dots">
+				<i class="fas fa-ellipsis-h"></i>
+			    <h6 style="color:grey; margin-left:-4px;">4.44</h6>
+			</div>	
+		</div>
+
+		<div class="similar-list">
+			<div class="pic-info">
+				<img src="images/moods/party.jpg">
+				<div class="similar-desc">
+					<h5>Imagine Dragons</h5>
+					<h6 style="color:grey;margin-top:-10px">Pop Bands</h6>
+				</div>
+			</div>
+			
+			<div class="three-dots">
+				<i class="fas fa-ellipsis-h"></i>
+			    <h6 style="color:grey; margin-left:-4px;">4.44</h6>
+			</div>	
+		</div>
+
+
+		<div style="margin-top:5%;" class="heading">
+			<h1 style="color:white;">Recently Played</h1>
+		</div>
+
+		<!--recently played list-->
+		<div class="recent-list">
+			<div class="pic-info">
+				<h6 style="color:grey;margin-top:8%;">01</h6>
+				<img src="images/moods/party.jpg">
+				<div class="recent-desc">
+					<h5>Imagine Dragons</h5>
+					<h6 style="color:grey;margin-top:-4%;">Pop Bands</h6>
+				</div>
+			</div>
+			<div class="heart">
+				<i class="far fa-heart"style="color:grey;"></i>
+			</div>
+			
+		</div>
+
+		<div class="recent-list">
+			<div class="pic-info">
+				<h6 style="color:grey;margin-top:8%;">02</h6>
+				<img src="images/moods/roadtrip.jpg">
+				<div class="recent-desc">
+					<h5>Imagine Dragons</h5>
+					<h6 style="color:grey;margin-top:-4%;">Pop Bands</h6>
+				</div>
+			</div>
+			<div class="heart">
+				<i class="far fa-heart"style="color:grey;"></i>
+			</div>
+		</div>
+
+		<div class="recent-list">
+			<div class="pic-info">
+				<h6 style="color:grey;margin-top:8%;">03</h6>
+				<img src="images/moods/dj.jpeg">
+				<div class="recent-desc">
+					<h5>Imagine Dragons</h5>
+					<h6 style="color:grey;margin-top:-4%;">Pop Bands</h6>
+				</div>
+			</div>
+			<div class="heart">
+				<i class="far fa-heart"style="color:grey;"></i>
+			</div>
+		</div>
+
+		<div class="recent-list">
+			<div class="pic-info">
+				<h6 style="color:grey;margin-top:8%;">04</h6>
+				<img src="images/moods/party.jpg">
+				<div class="recent-desc">
+					<h5>Imagine Dragons</h5>
+					<h6 style="color:grey;margin-top:-4%;">Pop Bands</h6>
+				</div>
+			</div>
+			
+			<div class="heart">
+				<i class="far fa-heart"style="color:grey;"></i>
+			</div>
+		</div>
+
+	</aside>
+
+		 <footer>
+        <div class="active-song-description">
+            <!-- song image -->
+            <div id="song-image">
+                <img src="images/singers/art3.jpg">
+            </div>
+            <!-- song name and author -->
+            <div class="song-info">
+                <div>
+                    Imagine
+                </div>
+                <div>
+                    Zayn Malik
+                </div>
+                <!-- heart icon and ban icon -->
+            </div>
+            <div class="heart-and-ban-icon">
+                <span>
+                    <i class="far fa-heart"></i>
+                </span>
+                <span>
+                    <i class="fas fa-ban"></i>
+                </span>
+            </div>
+        </div>
+        <!-- these are the main player controls -->
+        <div class="player">
+            <div class="controls">
+                <div><i class="fas fa-random"></i></div>
+                <div><i class="fas fa-step-backward"></i></div>
+                <div><i class="fas fa-pause-circle"></i></div>
+                <div><i class="fas fa-step-forward"></i></div>
+                <div><i class="fas fa-redo"></i></div>
+            </div>
+            <!-- this is the slider -->
+            <div id="slider">
+                <!-- current time -->
+                <div class="time">
+                    1:39
+                </div>
+                <div class="slidecontainer">
+                    <input type="range" min="0" max="100" value="0" class="slider" id="myRange">
+                </div>
+                <!-- total time -->
+                <div class="time">
+                    4:44
+                </div>
+            </div>
+        </div>
+        <!-- other icons including the volume slider and all -->
+        <div class="extras">
+            <div>
+                <i class="fas fa-list-ul"></i>
+            </div>
+            <div>
+                <i class="fas fa-laptop"></i>
+            </div>
+            <div>
+                <i class="fas fa-volume-up"></i>
+            </div>
+            <div class="slidecontainer" style="width:30%;">
+                <input type="range" min="0" max="100" value="0" class="slider" id="myRange" style="margin-top:0px;">
+            </div>
+            <div>
+                <i class="fas fa-expand-alt"></i>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

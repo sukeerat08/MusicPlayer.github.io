@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Music Player</title>
+	<!--Fontawesome and CSS file link-->
+	<link rel="stylesheet" type="text/css" href="mainPageStyle.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+	<!--Resposivesness-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<!--navigation bar-->
+	<nav>
+		<!--logo pic and name of station-->
+		<div class="logo-pic">
+			<img src="images/navbar/logo.jpg">
+		</div>
+		<div class="nav-heading">
+			<h4 style="font-weight:200; ">NINJA</h4>
+			<h3>Studio</h3>
+		</div>
+
+		<div class="favs">
+            <h4>
+                Favourites
+            </h4>
+        </div>
+
+		<!--search bar containing search and microphone icon-->
+		<div class="search-bar">
+            <div class="search-icon">
+                <i class="fas fa-search"></i>
+            </div>
+            <input type="text" name="search" placeholder="Search">
+            <div class="microphone-icon">
+                <i class="fas fa-microphone"></i>
+            </div>
+        </div>
+
+        <!--notification bell-->
+        <div class="bell">
+        	<i class="fas fa-bell"></i>
+        </div>
+
+        <!--pofile pic-->
+        <div class="profile-pic">
+        	<img src="images/navbar/mypic.jpg">
+        </div>
+
+	</nav>
+	
+	<main>
+		<!--home screen carousel-->
+		<div class="carosuel">
+			<div class="card-pics">
+				<img src="images/slider/carousel1.jpg">
+				<img src="images/slider/carousel2.jpg">
+				<img src="images/slider/carousel3.jpg">
+			</div>
+		</div>
+		
+
+		<h3 class="main-heading">Latest Release</h3>
+
+		<!--latest release section-->
+		<div class="latest-release">
+			<div class="lr">
+				<img src="images/moods/play.jpg">
+				<h4 style="margin-left:1rem;">Onism</h4>
+
+				<!--options that will appear when we click three dots-->
+				<div class="options">
+                    <label for="latest-release-checkbox"><i class="fas fa-ellipsis-h"></i></label>
+                    <input type="checkbox" id="latest-release-checkbox">
+                        <div class="latest-release-dropdown">
+                            <div class="drop-item">
+                                <p><i class="fas fa-play-circle"></i> Play Now</p>
+                            </div>
+                            <div class="drop-item">
+                               <p><i class="fas fa-list-ul"></i> Add to Queue</p>
+                            </div>
+                            <div class="drop-item">
+                                <p><i class="fas fa-music"></i> Add to playlist</p>
+                            </div>
+                            <div class="drop-item">
+                                <p><i class="fas fa-info-circle"></i> Get Info</p>
+                            </div>
+                        </div>
+                        <h6>
+                            4:44
+                        </h6>
+                </div>
+			</div>
+
+			<div class="lr">
+				<img src="images/moods/play.jpg">
+				<h4 style="margin-left:1rem;">Onism</h4>
+				<div class="options">
+                    <label for="latest-release-checkbox2"><i class="fas fa-ellipsis-h"></i></label>
+                    <input type="checkbox" id="latest-release-checkbox2">
+                        <div class="latest-release-dropdown">
+                            <div class="drop-item">
+                                <p><i class="fas fa-play-circle"></i> Play Now</p>
+                            </div>
+                            <div class="drop-item">
+                               <p><i class="fas fa-list-ul"></i> Add to Queue</p>
+                            </div>
+                            <div class="drop-item">
+                                <p><i class="fas fa-music"></i> Add to playlist</p>
+                            </div>
+                            <div class="drop-item">
+                                <p><i class="fas fa-info-circle"></i> Get Info</p>
+                            </div>
+                        </div>
+                        <h6>
+                            4:44
+                        </h6>
+                </div>
+			</div>
+		</div>
+
+		
+		<!--Popular artist section-->
+		<h3 class="main-heading">Popular Artist</h3>
+		
+		<div class="popular-artist">
+			<!--when we hover over the artist pic a play button appears and on clicking singlePlaylist screen appears-->
+			<div class="artist">
+				<img src="images/singers/art1.jpg">
+				<div>
+					<a href="SinglePlaylist.html"><i class="fas fa-play"></i></a>
+				</div>
+				<h5>Ed Sherran</h5>
+			</div>
+			<div class="artist">
+				<img src="images/singers/art2.jpg">
+				<div>
+					<a href="SinglePlaylist.html"><i class="fas fa-play"></i></a>
+				</div>
+				<h5>ColdPlay</h5>
+			</div>
+			<div class="artist">
+				<img src="images/singers/art3.jpg">
+				<div>
+					<a href="SinglePlaylist.html"><i class="fas fa-play"></i></a>
+				</div>
+				<h5>Zayn Malik</h5>
+			</div>
+			<div class="artist">
+				<img src="images/singers/art4.jpg">
+				<div>
+					<a href="SinglePlaylist.html"><i class="fas fa-play"></i></a>
+				</div>
+				<h5>Arijit Singh</h5>
+			</div>
+			<div class="artist">
+				<img src="images/singers/art5.jpg">
+				<div>
+					<a href="SinglePlaylist.html"><i class="fas fa-play"></i></a>
+				</div>
+				<h5>Charlie Puth</h5>
+			</div>
+			<div class="artist">
+				<img src="images/singers/art6.jpg">
+				<div>
+					<a href="SinglePlaylist.html"><i class="fas fa-play"></i></a>
+				</div>
+				<h5>Tylor Swift</h5>
+			</div>
+		</div>
+
+		<!--different stations section-->
+		<div class="stations">
+			<div>
+				<img src="images/stations/station.png">
+				<p>Stations</p>
+			</div>
+			<div>
+				<img src="images/stations/type1.jpg">
+				<p>Workout</p>
+			</div>
+			<div>
+				<img src="images/stations/type2.jpg">
+				<p>Love</p>
+			</div>
+			<div>
+				<img src="images/stations/type3.jpg">
+				<p>Chill</p>
+			</div>
+			<div>
+				<img src="images/stations/type4.jpg">
+				<p>Rock</p>
+			</div>
+			<div>
+				<img src="images/stations/type5.jpg">
+				<p>Pop</p>
+			</div>
+		</div>
+
+
+		<!--songs accoring to mood section-->
+		<div class="music-themes-2">
+			<!-- 3 divs content -->
+			<div class="outer-div">
+				<div class="inner-div">
+					<span>Electronic</span>
+				</div>
+			</div>
+			<div class="outer-div">
+				<div class="inner-div">
+					<span>Party</span>
+				</div>
+			</div>
+			<div class="outer-div">
+				<div class="inner-div">
+					<span>RoadTrip</span>
+				</div>
+			</div>
+		</div>
+
+		<!--latest english songs section-->
+		<h3 class="main-heading" style="margin-top:8%;">Latest English</h3>
+
+		<div class="latest-songs">
+			<div class="songs">
+				<img src="images/english/eng1.jpg">
+				<h5>Escape</h5>
+				<h6>Aug 2017</h6>
+			</div>
+			<div class="songs">
+				<img src="images/english/eng2.jpg">
+				<h5>Pain</h5>
+				<h6>Aug 2017</h6>
+			</div>
+			<div class="songs">
+				<img src="images/english/eng3.jpg">
+				<h5>BTS</h5>
+				<h6>Aug 2017</h6>
+			</div>
+			<div class="songs">
+				<img src="images/english/eng4.png">
+				<h5>Kid</h5>
+				<h6>Aug 2017</h6>
+			</div>
+			<div class="songs">
+				<img src="images/english/eng5.jpg">
+				<h5>Onisum</h5>
+				<h6>Aug 2017</h6>
+			</div>
+		</div>
+
+		<!--latest hindi songs section-->
+		<h3 class="main-heading">Latest Hindi</h3>
+
+		<div class="latest-songs">
+			<div class="songs">
+				<img src="images/hindi/hin1.jpg">
+				<h5>MS Dhoni</h5>
+				<h6>Aug 2017</h6>
+			</div>
+			<div class="songs">
+				<img src="images/hindi/hin2.jpg">
+				<h5>Devdas</h5>
+				<h6>Aug 2017</h6>
+			</div>
+			<div class="songs">
+				<img src="images/hindi/hin3.jpg">
+				<h5>Filhall</h5>
+				<h6>Aug 2017</h6>
+			</div>
+			<div class="songs">
+				<img src="images/hindi/hin4.jpg">
+				<h5>Yalgar</h5>
+				<h6>Aug 2017</h6>
+			</div>
+			<div class="songs">
+				<img src="images/hindi/hin5.jpg">
+				<h5>Main Hoon Na</h5>
+				<h6>Aug 2017</h6>
+			</div>
+		</div>
+
+	</main>
+
+
+	<!--aside section contains various list of songs-->
+	<aside>
+		
+		<div class="qlist">
+			<h2 class="main-heading">Queue</h2>
+			<h4>
+                <a href="#queue-option-box" style="color:white;text-decoration: none;">Queue <i class="fas fa-chevron-circle-down"></i></a>
+            </h4>
+			 <div class="queue-options" id="queue-option-box">
+                <p>Playlists</p>
+                <hr>
+                <p>Favourite songs</p>
+                <hr>
+                <a href="#"><p>Close</p></a>
+            </div>		
+		</div>
+
+		<div class="song-fav">
+			<div class="song-info">
+				<h6 style="color:white;">01</h6>
+				<img src="images/english/eng1.jpg">
+				<div class="name">
+					<h5>Onisum</h5>
+					<h6 style="margin-top:-1rem;">Else</h6>
+				</div>
+			</div>
+			<div class="fav-heart">
+				<i class="far fa-heart"></i>
+			</div>
+		</div>
+
+		<div class="song-fav">
+			<div class="song-info">
+				<h6 style="color:white;">02</h6>
+				<img src="images/english/eng2.jpg">
+				<div class="name">
+					<h5>Pain Us</h5>
+					<h6 style="margin-top:-1rem;">Else</h6>
+				</div>
+			</div>
+			<div class="fav-heart">
+				<i class="far fa-heart"></i>
+			</div>
+		</div>
+
+		<div class="song-fav">
+			<div class="song-info">
+				<h6 style="color:white;">03</h6>
+				<img src="images/english/eng3.jpg">
+				<div class="name">
+					<h5>Escape</h5>
+					<h6 style="margin-top:-1rem;">Else</h6>
+				</div>
+			</div>
+			<div class="fav-heart">
+				<i class="far fa-heart"></i>
+			</div>
+		</div>
+
+		<div class="song-fav">
+			<div class="song-info">
+				<h6 style="color:white;">04</h6>
+				<img src="images/hindi/hin1.jpg">
+				<div class="name">
+					<h5>Dhonii</h5>
+					<h6 style="margin-top:-1rem;">Else</h6>
+				</div>
+			</div>
+			<div class="fav-heart">
+				<i class="far fa-heart"></i>
+			</div>
+		</div>
+
+		<div class="song-fav">
+			<div class="song-info">
+				<h6 style="color:white;">05</h6>
+				<img src="images/hindi/hin2.jpg">
+				<div class="name">
+					<h5>Devdas</h5>
+					<h6 style="margin-top:-1rem;">Else</h6>
+				</div>
+			</div>		
+			<div class="fav-heart">
+				<i class="far fa-heart"></i>
+			</div>
+		</div>
+
+		<div class="song-fav">
+			<div class="song-info">
+				<h6 style="color:white;">06</h6>
+				<img src="images/hindi/hin3.jpg">
+				<div class="name">
+					<h5>Filhall</h5>
+					<h6 style="margin-top:-1rem;">Else</h6>
+				</div>
+			</div>
+			<div class="fav-heart">
+				<i class="far fa-heart"></i>
+			</div>
+		</div>
+
+		<div class="song-fav">
+			<div class="song-info">
+				<h6 style="color:white;">07</h6>
+				<img src="images/hindi/hin4.jpg">
+				<div class="name">
+					<h5>Yalgaar</h5>
+					<h6 style="margin-top:-1rem;">Else</h6>
+				</div>
+			</div>
+			<div class="fav-heart">
+				<i class="far fa-heart"></i>
+			</div>
+		</div>
+
+		<div class="song-fav">
+			<div class="song-info">
+				<h6 style="color:white;">08</h6>
+				<img src="images/hindi/hin5.jpg">
+				<div class="name">
+					<h5>Main Hu</h5>
+					<h6 style="margin-top:-1rem;">Else</h6>
+				</div>
+			</div>
+			<div class="fav-heart">
+				<i class="far fa-heart"></i>
+			</div>
+		</div>
+
+		<div class="song-fav">
+			<div class="song-info">
+				<h6 style="color:white;">09</h6>
+				<img src="images/english/eng1.jpg">
+				<div class="name">
+					<h5>Onisum</h5>
+					<h6 style="margin-top:-1rem;">Else</h6>
+				</div>
+			</div>
+			<div class="fav-heart">
+				<i class="far fa-heart"></i>
+			</div>
+		</div>
+
+		<div class="song-fav">
+			<div class="song-info">
+				<h6 style="color:white;">10</h6>
+				<img src="images/english/eng5.jpg">
+				<div class="name">
+					<h5>We Won</h5>
+					<h6 style="margin-top:-1rem;">Else</h6>
+				</div>
+			</div>
+			<div class="fav-heart">
+				<i class="far fa-heart"></i>
+			</div>
+		</div>
+
+	</aside>
+
+	<!--footer sections conatins song-description , controls and other options -->
+	 <footer>
+        <div class="active-song-description">
+            <!-- song image -->
+            <div id="song-image">
+                <img src="images/singers/art3.jpg">
+            </div>
+            <!-- song name and author -->
+            <div class="song-info">
+                <div>
+                    Imagine
+                </div>
+                <div>
+                    Zayn Malik
+                </div>
+                <!-- heart icon and ban icon -->
+            </div>
+            <div class="heart-and-ban-icon">
+                <span>
+                    <i class="far fa-heart"></i>
+                </span>
+                <span>
+                    <i class="fas fa-ban"></i>
+                </span>
+            </div>
+        </div>
+        <!-- these are the main player controls -->
+        <div class="player">
+            <div class="controls">
+                <div><i class="fas fa-random"></i></div>
+                <div><i class="fas fa-step-backward"></i></div>
+                <div><i class="fas fa-pause-circle"></i></div>
+                <div><i class="fas fa-step-forward"></i></div>
+                <div><i class="fas fa-redo"></i></div>
+            </div>
+            <!-- this is the slider -->
+            <div id="slider">
+                <!-- current time -->
+                <div class="time">
+                    1:39
+                </div>
+                <div class="slidecontainer">
+                    <input type="range" min="0" max="100" value="0" class="slider" id="myRange">
+                </div>
+                <!-- total time -->
+                <div class="time">
+                    4:44
+                </div>
+            </div>
+        </div>
+        <!-- other icons including the volume slider and all -->
+        <div class="extras">
+            <div>
+                <i class="fas fa-list-ul"></i>
+            </div>
+            <div>
+                <i class="fas fa-laptop"></i>
+            </div>
+            <div>
+                <i class="fas fa-volume-up"></i>
+            </div>
+            <div class="slidecontainer" style="width:30%;">
+                <input type="range" min="0" max="100" value="0" class="slider" id="myRange" style="margin-top:0px;">
+            </div>
+            <div>
+                <i class="fas fa-expand-alt"></i>
+            </div>
+        </div>
+    </footer>
+	</footer>
+
+</body>
+
+
+</html>

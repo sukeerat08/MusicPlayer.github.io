@@ -1,0 +1,582 @@
+/** css for bosy main and aside section**/
+body
+{
+	background:linear-gradient(50deg,rgb(65, 20, 78),black);
+	margin-left:4%;
+	margin-right:1%;
+	font-family:sans-serif;	
+	color:whitesmoke
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+main
+{
+	margin:3%;
+	display: inline-block;
+	width:50vw;
+	vertical-align: top;
+	height:72vh;
+	overflow-y:scroll;
+}
+/**to hide the scrollbar**/
+main::-webkit-scrollbar {
+  display: none;
+}
+aside
+{
+	margin:3%;
+	margin-left:-1%;
+	display: inline-block;
+	width:30vw;
+	height:72vh;
+	overflow-y:scroll;
+}
+/**to hide the scrollbar**/
+aside::-webkit-scrollbar {
+  display: none;
+}
+
+/**navigation section***/
+/**navigation section***/
+nav{
+	height: auto;
+	width: auto;
+	background-image: linear-gradient(180deg, black, rgba(0, 0, 0, 0));
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	box-sizing: border-box;
+	padding-left: 5%;
+	padding-right: 5%;
+	transition: all ease-in-out 1s; /* when the navbar loads, every property transits for 1s */
+}
+/* all the divs inside the navigation bar should be placed side by side*/
+nav> div {
+	display: inline-block;
+}
+/* animation for the website logo */
+@keyframes rotating {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+/* website logo image */
+.logo-pic img {
+	height: 70px;
+	width: 70px;
+	border-radius: 100%;
+	animation-name: rotating;
+	animation-timing-function: ease-in-out;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+}
+/* website function */
+.nav-heading {
+	margin-left:-10%;
+}
+
+/* animation for favoutites text */
+@keyframes flexible {
+	0% {
+		transform: rotate(0deg);
+	}
+	50% {
+		transform: rotateY(360deg);
+	}
+	75% {
+		transform: scale(1.2);
+	}
+	100% {
+		transform: scaleX(1);
+	}
+}
+/* favourites text */
+.favs {
+	animation-name: flexible;
+	animation-timing-function: ease-in-out;
+	animation-duration: 2s;
+	perspective: 10000px;
+	transform-style: preserve-3d;
+	animation-iteration-count: infinite;
+}
+/* search bar */
+.search-bar {
+	width: 20%;
+	position: relative;
+}
+/* changing the default style of the input bar */
+.search-bar input {
+	width: 100%;
+	font-size: 16px;
+	text-decoration: none;
+	border-radius: 18px;
+	border: none;
+	padding: 5px;
+	font-weight: 500;
+	margin-top:-30px;
+	text-align: center;
+	color:whitesmoke;
+	transition: all ease-in-out 0.1s;
+	background-color:rgb(65, 20, 78);
+}
+/* search icon for input bar */
+.search-icon {
+	color:whitesmoke;
+}
+/* mic icon for input */
+.microphone-icon{
+	color:whitesmoke;
+}
+/* search icon */
+.search-bar > div:nth-child(1) {
+	display: inline-block;
+	position: absolute;
+	width: min-content;
+	left: 5%;
+	top: 10%;
+	transition: all ease-in-out 0.1s;
+}
+/* mic icon */
+.search-bar > div:nth-child(3) {
+	display: inline-block;
+	position: absolute;
+	width: min-content;
+	right: 0%;
+	top: 10%;
+	transition: all ease-in-out 0.1s;
+}
+/* when the user clicks on the search bar, there should be no blue outlining */
+input:focus {
+	outline: none;
+}
+/* animation for bell image */
+@keyframes ringing_bell {
+	0% {
+		transform: rotate(-15deg);
+	}
+	50% {
+		transform: rotate(15deg);
+	}
+	100% {
+		transform: rotate(-15deg);
+	}
+}
+/* notification bell image */
+.bell{
+	font-size: 1.5rem;
+	animation-name: ringing_bell;
+	animation-duration: 0.5s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+}
+/* profile picture of the user */
+.profile-pic img {
+	width: 55px;
+	height: 55px;
+	border-radius: 100%;
+	margin-left:-20px;
+}
+
+/**main section**/
+.main-card
+{
+	box-shadow: 0px 0px 1px 1px rgba(230,196,196,0.3);
+	background:linear-gradient(250deg,rgb(65, 20, 78),black);
+	display: flex;
+	flex-direction: row;
+	transition: 0.5s all ease-in-out;
+	height:280px;
+}
+
+.main-card:hover
+{
+	opacity: 0.85;
+	transform: scale(1.1);
+
+}
+.text{
+	margin-left:1%;
+	height:100%;
+	overflow: hidden;
+}
+.main-pic
+{
+	height:280px;
+	width:600px;
+}
+.main-pic img{
+	height:100%;
+	width:100%;
+}
+
+#play
+{
+	width:25%;
+	height:10%;
+	background-color:#ac31ac;
+	color:white;
+	border-radius: 2px;
+	border:0px solid transparent;
+}
+#follow
+{
+	width:15%;
+	height:10%;
+	margin-left:2rem;
+	color:white;
+	background-color: transparent;
+	border:0px solid transparent;
+
+}
+
+.list
+{
+	box-shadow: 0px 0px 6px 4px rgba(230,196,196,0.3);
+	margin-top:2rem;
+	display:flex;
+	flex-wrap:column;
+	background:linear-gradient(250deg,rgb(65, 20, 78),black);
+	transition: 0.5s all ease-in-out;
+}
+
+.list>div{
+	display: flex;
+	justify-content: space-around;
+}
+.list-info{
+	position: relative;
+	left:5%;
+	width:25%;
+	display:flex;
+	justify-content: space-around;
+}
+.list:hover
+{
+	transform: scale(1.1);
+}
+.list img
+{
+	width:100px;
+	height:100px;
+	margin-left:1rem;
+}
+.heart-cross{
+	position: relative;
+	left:55%;
+	display: flex;
+	align-items: center;
+	color:grey;
+}
+.list-hearts
+{
+	margin-right:25px;
+}
+
+.heart-cross i:hover{
+	color:white;
+}
+
+.desc
+{
+	margin-left:1rem;
+}
+
+
+/**aside section**/
+.heading
+{
+	display:flex;
+}
+.similar-list,.recent-list
+{
+	margin-top:2%;
+	display:flex;
+}
+.pic-info{
+	width:95%;
+	display: flex;
+}
+.three-dots,.heart{
+	margin-top:20px;
+	display: flex;
+	flex-direction: column;
+}
+.similar-list img
+{
+	box-shadow: 0px 0px 2px 2px rgba(230,196,196,0.3);
+	width:100px;
+	height:100px;
+}
+.similar-desc,.recent-desc
+{
+	color:white;
+	margin-left:3%;
+	margin-top:-5px;
+	display: inline-block;
+}
+
+.recent-list img
+{
+	box-shadow: 0px 0px 2px 2px rgba(230,196,196,0.3);
+	height:80px;
+	width:80px;
+	margin-left:1%;
+}
+
+
+/**footer**/
+footer {
+	position: absolute;
+	bottom: 1px;
+	width: 100%;
+	height: 60px;
+	background-color: rgb(65, 20, 78);
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-content: center;
+	flex-wrap: nowrap;
+	padding: 0px 3%;
+	box-sizing: border-box;
+	z-index:5;
+}
+
+.active-song-description 
+{
+	height: 90%;
+	width: 25%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+
+#song-image img 
+{
+	width: 50px;
+	height: 50px;
+	min-width: 50px;
+	min-height: 50px;
+}
+/* heart and ban icon */
+.heart-and-ban-icon
+ {
+	height: 100%;
+	padding-top: 4%;
+}
+
+.song-info
+ {
+	margin-right: 1%;
+	margin-left: 1%;
+}
+/* song name */
+.song-desc div:nth-child(1)
+ {
+	font-size: 12px;
+}
+/* song author */
+.song-desc div:nth-child(2) 
+{
+	font-size: 10px;
+}
+
+
+.player
+ {
+	width: 45%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: nowrap;
+}
+
+.controls
+ {
+	width: 40%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 20px;
+}
+
+#slider
+ {
+	width: 100%;
+	font-size: 12px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: center;
+	justify-content: center;
+	margin-top: 5px;
+}
+
+.time {
+	margin: 0px 10px;
+}
+
+/* adjusting the slider for better visuals */
+.slidecontainer {
+	width: 100%;
+}
+/* for audio and main center player */
+.slider {
+	-webkit-appearance: none;
+	width: 100%;
+	height: 5px;
+	background: #d3d3d3;
+	outline: none;
+	opacity: 0.5;
+	-webkit-transition: 0.2s;
+	transition: opacity 0.2s;
+}
+/* hover effect for the slider */
+.slider:hover {
+	opacity: 1;
+}
+/* these are for adjusting the dimensions and default styling of the long-slider */
+.slider::-webkit-slider-thumb 
+{
+	-webkit-appearance: none;
+	appearance: none;
+	width: 17px;
+	height: 17px;
+	border-radius: 50%;
+	background: #007bff;
+	cursor: pointer;
+}
+/* this is the circular thumb, which can be moved across the div */
+.slider::-moz-range-thumb 
+{
+	width: 25px;
+	height: 25px;
+	background: #4caf50;
+	cursor: pointer;
+}
+
+.extras 
+{
+	width: 20%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+/***media tags**/
+
+@media (max-width: 1250px)
+{
+	.search-bar {
+		width: 30%;
+	}
+	.favs {
+		display: none !important;
+	}
+	
+	input {
+		font-size: 11px !important;
+	}
+	.list-hearts
+	{
+		margin-left:45%;
+	}
+}
+
+@media (max-width:915px)
+{
+	.list-hearts
+	{
+		margin-left:35%; 
+	}
+	.fav
+	{
+		margin-left:10%;
+	}
+
+}
+
+@media (max-width:800px)
+{
+	footer
+	{
+		position: fixed;
+	}
+	/* extra icons in the footer at the right hand side */
+	.extras > div:nth-child(3) {
+		display: none;
+	}
+	.extras > div:nth-child(4) {
+		display: none;
+	}
+	body
+	{
+		background:linear-gradient(85deg,rgb(65, 20, 78),black);
+	}
+	main
+	{
+		display: block;
+		width:90%;
+		height:auto;
+		overflow:hidden;
+	}
+	aside 
+	{
+		display: block;
+		width:90%;
+		height:auto;
+		margin-left:1%;
+	}
+
+}
+@media (max-width:500px)
+{
+	body
+	{
+		background:linear-gradient(90deg,rgb(65, 20, 78),black);
+	}
+	.logo-pic img{
+		width:50px;
+		height:50px;
+	}
+	.bell{
+		font-size: 1.2rem;
+	}
+	.nav-heading{
+		display: none;
+	}
+	aside{
+		margin-left:10px;
+	}
+	.heart-cross{
+		left:45%;
+	}
+	
+	 .main-card{
+		display: flex;
+		justify-content: space-around;
+		height: 220px;;
+	} 
+	.main-pic{
+		height:220px;
+		width:550px;
+	}
+	
+	.text{
+		margin-left:2px;
+		font-size: 11px;
+	} 
+	#play{
+		font-size: 10px;
+	}
+
+}
